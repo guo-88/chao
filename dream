@@ -5,7 +5,7 @@ class Employee :
         self.id = id
 
     def print_info(self):
-        print(F"名字: {self.name},工号:{self.id}")
+        print(F"name: {self.name},nomber:{self.id}")
 
 class FullTimeEmployee (Employee):
     def __init__(self,name,id,monthly_salary):
@@ -25,7 +25,7 @@ class PartTimeEmployee(Employee):
         return self.daily_salary * self.work_days
 
 
-guo = PartTimeEmployee("郭:","10086",100,20)
+guo = PartTimeEmployee("Guo:","10086",100,20)
 guo.print_info()
 
 print(f"工资:{guo.calculate_monthly_pay()}")
